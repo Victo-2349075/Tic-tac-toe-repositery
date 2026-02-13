@@ -1,0 +1,77 @@
+{
+    "version": 1,
+    "name": "ARInputActions",
+    "maps": [
+        {
+            "name": "AR",
+            "id": "4d142ff8-9e91-47f9-a1d3-94a9ab7df969",
+            "actions": [
+                {
+                    "name": "Point",
+                    "type": "Value",
+                    "id": "e115b5af-30e6-4d10-b63b-1e9d1c8e87bc",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Tap",
+                    "type": "Button",
+                    "id": "8edd5941-4601-48fe-bce1-d21abe976213",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3a8b8b20-58ec-47c8-8105-7630931823c9",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d392044a-a051-4180-8114-6b1d273afb6d",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "203c1705-a98f-4add-bf2c-0446fb68619d",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "169faa87-ac27-4a5f-b504-b1750f9d15aa",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

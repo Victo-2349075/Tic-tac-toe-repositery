@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEditor.PackageManager;
 //https://docs.unity3d.com/ScriptReference/Transform-localPosition.html
 //https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Object.FindObjectsByType.html
 /// <summary>
@@ -65,7 +66,7 @@ public class GameController : MonoBehaviour
         // Vérifie si il y a une victoire.
         if (CheckWin())
         {
-            // Vérifie que le texte du gagnant est assigné avant d'afficher le joueur victorieux.
+            // Vérifie que le texte du gagnant est assigné avant d'afficher le joueur gagnant.
             if (winnerText != null)
                 winnerText.text = (isXTurn ? "X" : "O") + " a gagné!";
             // Vérifie que le panneau de fin de partie est valide puis l'affiche.
@@ -95,6 +96,7 @@ public class GameController : MonoBehaviour
     /// </summary>
     void UpdateUI()
     {
+        // Vérifie que le texte UI existe avant de le modifier pour éviter une erreur null
         if (currentPlayerText != null)
             currentPlayerText.text = "Tour de " + (isXTurn ? "X" : "O");
     }

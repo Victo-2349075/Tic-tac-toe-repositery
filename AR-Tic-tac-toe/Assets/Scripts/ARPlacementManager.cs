@@ -49,6 +49,7 @@ public class ARPlacementManager : MonoBehaviour
     /// </summary>
     public void ResetPlacement()
     {
+        // Vérifie que le plateau existe avant de le détruire pour éviter une erreur
         if (spawnedBoard != null)
         {
             Destroy(spawnedBoard);
